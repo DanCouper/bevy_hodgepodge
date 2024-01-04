@@ -1,0 +1,4 @@
+[toolchain]
+# Use nightly for commpiler optimisations
+channel = "nightly"
+

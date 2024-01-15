@@ -3,13 +3,6 @@ name = "bevy_hodgepodge"
 version = "0.1.0"
 edition = "2021"
 
-# Enable a small amount of optimization in debug mode
-[profile.dev]
-opt-level = 1
-
-# Enable max optimizations for dependencies, but not for our code:
-[profile.dev.package."*"]
-opt-level = 3
 
 [dependencies.bevy]
 # IMPORTANT: MAKE SURE THIS IS THE LATEST VERSION
@@ -50,7 +43,7 @@ features = [
   "vorbis", # Audio: OGG Vorbis
 
   # Platform-specific:
-  # "x11",                   # Linux: Support X11 windowing system
+  "x11",                   # Linux: Support X11 windowing system
   "android_shared_stdcxx", # Android: use shared C++ library
   # "webgl2",                # Web: use WebGL2 instead of WebGPU
 
